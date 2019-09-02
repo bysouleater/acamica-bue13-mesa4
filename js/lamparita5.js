@@ -1,4 +1,4 @@
-// Encender cuando la lamparita 1 y 2 esten encendidas o las lamparitas 3 y 4 esten apagadas o las lamparita 5 este encendida y la lamparita 6 este apagada
-function estadoL10(l1, l2, l3, l4, l5, l6) {
-  return (l1 && l2) || (!l3 && !l4) || (l5 && !l6);
-}
+// Encender a los segundos impares o a los segundos multiplos de 10
+function estadoL5(segundos) {
+  return segundos % 2 == 1 || segundos % 10 == 0 && segundos != 0;
+ }
